@@ -1,28 +1,62 @@
-// swift-tools-version: 5.9
+// swift-tools-version:5.7
 import PackageDescription
 
 let package = Package(
-    name: "novin_intelligence",
+    name: "NovinIntelligence",
     platforms: [
         .iOS(.v15)
     ],
     products: [
-        // Expose both the shim C module (NovinPythonBridge) and the binary framework module
-        // so any target (including tests) can resolve `import NovinPythonBridge` during compile.
-        .library(name: "NovinIntelligence", targets: ["NovinPythonBridge", "novin_intelligence"])    
+        .library(
+            name: "NovinIntelligence",
+            targets: ["NovinIntelligence"]
+        )
     ],
     targets: [
-        // Lightweight Clang module exposing NovinPythonBridge.h.
-        // The actual symbol implementations are provided by the binary framework at link time.
+        .binaryTarget(
+            name: "PythonSupport",
+            path: "Python.xcframework"
+        ),
         .target(
             name: "NovinPythonBridge",
+            dependencies: ["PythonSupport"],
             path: "Sources/NovinPythonBridge",
-            publicHeadersPath: "include"
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath("include"),
+                .headerSearchPath("../../Python.xcframework/ios-arm64_x86_64-simulator/include/python3.13"),
+                .headerSearchPath("../../Python.xcframework/ios-arm64/include/python3.13"),
+                .unsafeFlags([
+                    "-fno-modules"
+                ])
+            ]
         ),
-        .binaryTarget(
-            name: "novin_intelligence",
-            url: "https://github.com/Novinintelligence/novin_intelligence/releases/download/1.0.0/novin_intelligence.xcframework.zip",
-            checksum: "93158d742b87531b1f77020c6692097b2cc8b09f535e0d41a687d29f517a4f76"
+        .target(
+            name: "NovinIntelligence",
+            dependencies: [
+                "NovinPythonBridge",
+                "PythonSupport"
+            ],
+            path: "Sources/NovinIntelligence",
+            resources: [
+                .copy("Resources/python"),
+                .copy("Resources/install_dependencies.py"),
+                .copy("Resources/requirements.txt"),
+                .copy("Resources/novin_ai_bridge.py")
+            ],
+            plugins: [
+                // .plugin(name: "SetupAIDependencies")  // Disabled for reliable builds
+                // Users should run: bash setup_novin_sdk.sh manually after cloning
+            ]
+        ),
+        .plugin(
+            name: "SetupAIDependencies",
+            capability: .buildTool(),
+            path: "Plugins/SetupAIDependencies"
+        ),
+        .testTarget(
+            name: "NovinIntelligenceTests",
+            dependencies: ["NovinIntelligence"]
         )
     ]
 )

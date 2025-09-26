@@ -1,4 +1,4 @@
-module NovinPythonBridge [system] {
-  header "NovinPythonBridge.h"
-  export *
+module NovinPythonBridge {
+    header "NovinPythonBridge.h"
+    export *
 }
