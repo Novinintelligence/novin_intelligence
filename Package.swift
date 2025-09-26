@@ -7,9 +7,18 @@ let package = Package(
         .iOS(.v15)
     ],
     products: [
-        .library(name: "NovinIntelligence", targets: ["novin_intelligence"])
+        // Expose both the shim C module (NovinPythonBridge) and the binary framework module
+        // so any target (including tests) can resolve `import NovinPythonBridge` during compile.
+        .library(name: "NovinIntelligence", targets: ["NovinPythonBridge", "novin_intelligence"])    
     ],
     targets: [
+        // Lightweight Clang module exposing NovinPythonBridge.h.
+        // The actual symbol implementations are provided by the binary framework at link time.
+        .target(
+            name: "NovinPythonBridge",
+            path: "Sources/NovinPythonBridge",
+            publicHeadersPath: "include"
+        ),
         .binaryTarget(
             name: "novin_intelligence",
             url: "https://github.com/Novinintelligence/novin_intelligence/releases/download/1.0.0/novin_intelligence.xcframework.zip",
