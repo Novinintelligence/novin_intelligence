@@ -1,0 +1,4 @@
+framework module novin_intelligence {
+  header "novin_intelligence-Swift.h"
+  requires objc
+}

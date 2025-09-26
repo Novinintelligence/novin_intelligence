@@ -1,0 +1,60 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name novin_intelligence
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+import Foundation
+import NovinPythonBridge
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers @available(iOS 15.0, macOS 12.0, *)
+final public class NovinIntelligence : @unchecked Swift.Sendable {
+  public static let shared: novin_intelligence.NovinIntelligence
+  final public func initialize(brandConfig: Swift.String? = nil) async throws
+  final public func assess(requestJson: Swift.String) async throws -> novin_intelligence.SecurityAssessment
+  final public func feedSecurityEvent(_ event: Any) async
+  final public func setSystemMode(_ mode: Swift.String)
+  final public func assessMotion(confidence: Swift.Double, location: Swift.String = "unknown") async throws -> novin_intelligence.SecurityAssessment
+  final public func assessDoorEvent(isOpening: Swift.Bool, location: Swift.String = "frontDoor") async throws -> novin_intelligence.SecurityAssessment
+  @objc deinit
+}
+public enum NovinIntelligenceError : Swift.Error {
+  case notInitialized
+  case invalidInput(Swift.String)
+  case processingFailed(Swift.String)
+  case pythonError(Swift.String)
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class PythonBridge {
+  public static let shared: novin_intelligence.PythonBridge
+  public func initialize() throws
+  public func processRequest(_ requestJson: Swift.String, clientId: Swift.String = "ios_client") -> Swift.Result<Swift.String, novin_intelligence.NovinIntelligenceError>
+  @objc deinit
+}
+public enum ThreatLevel : Swift.String, Swift.Codable {
+  case standard
+  case elevated
+  case critical
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct SecurityAssessment : Swift.Codable {
+  public let threatLevel: novin_intelligence.ThreatLevel
+  public let confidence: Swift.Double
+  public let processingTimeMs: Swift.Double
+  public let reasoning: Swift.String
+  public let requestId: Swift.String?
+  public let timestamp: Swift.String?
+  public init(threatLevel: novin_intelligence.ThreatLevel, confidence: Swift.Double, processingTimeMs: Swift.Double, reasoning: Swift.String, requestId: Swift.String? = nil, timestamp: Swift.String? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension novin_intelligence.ThreatLevel : Swift.Equatable {}
+extension novin_intelligence.ThreatLevel : Swift.Hashable {}
+extension novin_intelligence.ThreatLevel : Swift.RawRepresentable {}

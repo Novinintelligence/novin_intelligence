@@ -1,0 +1,1547 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "novin_intelligence",
+    "printedName": "novin_intelligence",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "novin_intelligence"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NovinIntelligence",
+        "printedName": "NovinIntelligence",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NovinIntelligence",
+                "printedName": "novin_intelligence.NovinIntelligence",
+                "usr": "s:18novin_intelligence17NovinIntelligenceC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence17NovinIntelligenceC6sharedACvpZ",
+            "mangledName": "$s18novin_intelligence17NovinIntelligenceC6sharedACvpZ",
+            "moduleName": "novin_intelligence",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NovinIntelligence",
+                    "printedName": "novin_intelligence.NovinIntelligence",
+                    "usr": "s:18novin_intelligence17NovinIntelligenceC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence17NovinIntelligenceC6sharedACvgZ",
+                "mangledName": "$s18novin_intelligence17NovinIntelligenceC6sharedACvgZ",
+                "moduleName": "novin_intelligence",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(brandConfig:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18novin_intelligence17NovinIntelligenceC10initialize11brandConfigySSSg_tYaKF",
+            "mangledName": "$s18novin_intelligence17NovinIntelligenceC10initialize11brandConfigySSSg_tYaKF",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "assess",
+            "printedName": "assess(requestJson:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityAssessment",
+                "printedName": "novin_intelligence.SecurityAssessment",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18novin_intelligence17NovinIntelligenceC6assess11requestJsonAA18SecurityAssessmentVSS_tYaKF",
+            "mangledName": "$s18novin_intelligence17NovinIntelligenceC6assess11requestJsonAA18SecurityAssessmentVSS_tYaKF",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "feedSecurityEvent",
+            "printedName": "feedSecurityEvent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18novin_intelligence17NovinIntelligenceC17feedSecurityEventyyypYaF",
+            "mangledName": "$s18novin_intelligence17NovinIntelligenceC17feedSecurityEventyyypYaF",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSystemMode",
+            "printedName": "setSystemMode(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18novin_intelligence17NovinIntelligenceC13setSystemModeyySSF",
+            "mangledName": "$s18novin_intelligence17NovinIntelligenceC13setSystemModeyySSF",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "assessMotion",
+            "printedName": "assessMotion(confidence:location:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityAssessment",
+                "printedName": "novin_intelligence.SecurityAssessment",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18novin_intelligence17NovinIntelligenceC12assessMotion10confidence8locationAA18SecurityAssessmentVSd_SStYaKF",
+            "mangledName": "$s18novin_intelligence17NovinIntelligenceC12assessMotion10confidence8locationAA18SecurityAssessmentVSd_SStYaKF",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "assessDoorEvent",
+            "printedName": "assessDoorEvent(isOpening:location:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityAssessment",
+                "printedName": "novin_intelligence.SecurityAssessment",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18novin_intelligence17NovinIntelligenceC15assessDoorEvent9isOpening8locationAA18SecurityAssessmentVSb_SStYaKF",
+            "mangledName": "$s18novin_intelligence17NovinIntelligenceC15assessDoorEvent9isOpening8locationAA18SecurityAssessmentVSb_SStYaKF",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18novin_intelligence17NovinIntelligenceC",
+        "mangledName": "$s18novin_intelligence17NovinIntelligenceC",
+        "moduleName": "novin_intelligence",
+        "intro_Macosx": "12.0",
+        "intro_iOS": "15.0",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "Available",
+          "Available",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "novin_intelligence"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NovinIntelligenceError",
+        "printedName": "NovinIntelligenceError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "notInitialized",
+            "printedName": "notInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(novin_intelligence.NovinIntelligenceError.Type) -> novin_intelligence.NovinIntelligenceError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NovinIntelligenceError",
+                    "printedName": "novin_intelligence.NovinIntelligenceError",
+                    "usr": "s:18novin_intelligence22NovinIntelligenceErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "novin_intelligence.NovinIntelligenceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NovinIntelligenceError",
+                        "printedName": "novin_intelligence.NovinIntelligenceError",
+                        "usr": "s:18novin_intelligence22NovinIntelligenceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18novin_intelligence22NovinIntelligenceErrorO14notInitializedyA2CmF",
+            "mangledName": "$s18novin_intelligence22NovinIntelligenceErrorO14notInitializedyA2CmF",
+            "moduleName": "novin_intelligence"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidInput",
+            "printedName": "invalidInput",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(novin_intelligence.NovinIntelligenceError.Type) -> (Swift.String) -> novin_intelligence.NovinIntelligenceError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> novin_intelligence.NovinIntelligenceError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NovinIntelligenceError",
+                        "printedName": "novin_intelligence.NovinIntelligenceError",
+                        "usr": "s:18novin_intelligence22NovinIntelligenceErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "novin_intelligence.NovinIntelligenceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NovinIntelligenceError",
+                        "printedName": "novin_intelligence.NovinIntelligenceError",
+                        "usr": "s:18novin_intelligence22NovinIntelligenceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18novin_intelligence22NovinIntelligenceErrorO12invalidInputyACSScACmF",
+            "mangledName": "$s18novin_intelligence22NovinIntelligenceErrorO12invalidInputyACSScACmF",
+            "moduleName": "novin_intelligence"
+          },
+          {
+            "kind": "Var",
+            "name": "processingFailed",
+            "printedName": "processingFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(novin_intelligence.NovinIntelligenceError.Type) -> (Swift.String) -> novin_intelligence.NovinIntelligenceError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> novin_intelligence.NovinIntelligenceError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NovinIntelligenceError",
+                        "printedName": "novin_intelligence.NovinIntelligenceError",
+                        "usr": "s:18novin_intelligence22NovinIntelligenceErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "novin_intelligence.NovinIntelligenceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NovinIntelligenceError",
+                        "printedName": "novin_intelligence.NovinIntelligenceError",
+                        "usr": "s:18novin_intelligence22NovinIntelligenceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18novin_intelligence22NovinIntelligenceErrorO16processingFailedyACSScACmF",
+            "mangledName": "$s18novin_intelligence22NovinIntelligenceErrorO16processingFailedyACSScACmF",
+            "moduleName": "novin_intelligence"
+          },
+          {
+            "kind": "Var",
+            "name": "pythonError",
+            "printedName": "pythonError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(novin_intelligence.NovinIntelligenceError.Type) -> (Swift.String) -> novin_intelligence.NovinIntelligenceError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> novin_intelligence.NovinIntelligenceError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NovinIntelligenceError",
+                        "printedName": "novin_intelligence.NovinIntelligenceError",
+                        "usr": "s:18novin_intelligence22NovinIntelligenceErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "novin_intelligence.NovinIntelligenceError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NovinIntelligenceError",
+                        "printedName": "novin_intelligence.NovinIntelligenceError",
+                        "usr": "s:18novin_intelligence22NovinIntelligenceErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18novin_intelligence22NovinIntelligenceErrorO06pythonE0yACSScACmF",
+            "mangledName": "$s18novin_intelligence22NovinIntelligenceErrorO06pythonE0yACSScACmF",
+            "moduleName": "novin_intelligence"
+          },
+          {
+            "kind": "Var",
+            "name": "localizedDescription",
+            "printedName": "localizedDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence22NovinIntelligenceErrorO20localizedDescriptionSSvp",
+            "mangledName": "$s18novin_intelligence22NovinIntelligenceErrorO20localizedDescriptionSSvp",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence22NovinIntelligenceErrorO20localizedDescriptionSSvg",
+                "mangledName": "$s18novin_intelligence22NovinIntelligenceErrorO20localizedDescriptionSSvg",
+                "moduleName": "novin_intelligence",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18novin_intelligence22NovinIntelligenceErrorO",
+        "mangledName": "$s18novin_intelligence22NovinIntelligenceErrorO",
+        "moduleName": "novin_intelligence",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "novin_intelligence"
+      },
+      {
+        "kind": "Import",
+        "name": "NovinPythonBridge",
+        "printedName": "NovinPythonBridge",
+        "declKind": "Import",
+        "moduleName": "novin_intelligence"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PythonBridge",
+        "printedName": "PythonBridge",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PythonBridge",
+                "printedName": "novin_intelligence.PythonBridge",
+                "usr": "s:18novin_intelligence12PythonBridgeC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence12PythonBridgeC6sharedACvpZ",
+            "mangledName": "$s18novin_intelligence12PythonBridgeC6sharedACvpZ",
+            "moduleName": "novin_intelligence",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PythonBridge",
+                    "printedName": "novin_intelligence.PythonBridge",
+                    "usr": "s:18novin_intelligence12PythonBridgeC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence12PythonBridgeC6sharedACvgZ",
+                "mangledName": "$s18novin_intelligence12PythonBridgeC6sharedACvgZ",
+                "moduleName": "novin_intelligence",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18novin_intelligence12PythonBridgeC10initializeyyKF",
+            "mangledName": "$s18novin_intelligence12PythonBridgeC10initializeyyKF",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "processRequest",
+            "printedName": "processRequest(_:clientId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<Swift.String, novin_intelligence.NovinIntelligenceError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NovinIntelligenceError",
+                    "printedName": "novin_intelligence.NovinIntelligenceError",
+                    "usr": "s:18novin_intelligence22NovinIntelligenceErrorO"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18novin_intelligence12PythonBridgeC14processRequest_8clientIds6ResultOySSAA22NovinIntelligenceErrorOGSS_SStF",
+            "mangledName": "$s18novin_intelligence12PythonBridgeC14processRequest_8clientIds6ResultOySSAA22NovinIntelligenceErrorOGSS_SStF",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:18novin_intelligence12PythonBridgeC",
+        "mangledName": "$s18novin_intelligence12PythonBridgeC",
+        "moduleName": "novin_intelligence",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "novin_intelligence"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ThreatLevel",
+        "printedName": "ThreatLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "standard",
+            "printedName": "standard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(novin_intelligence.ThreatLevel.Type) -> novin_intelligence.ThreatLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ThreatLevel",
+                    "printedName": "novin_intelligence.ThreatLevel",
+                    "usr": "s:18novin_intelligence11ThreatLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "novin_intelligence.ThreatLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ThreatLevel",
+                        "printedName": "novin_intelligence.ThreatLevel",
+                        "usr": "s:18novin_intelligence11ThreatLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18novin_intelligence11ThreatLevelO8standardyA2CmF",
+            "mangledName": "$s18novin_intelligence11ThreatLevelO8standardyA2CmF",
+            "moduleName": "novin_intelligence"
+          },
+          {
+            "kind": "Var",
+            "name": "elevated",
+            "printedName": "elevated",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(novin_intelligence.ThreatLevel.Type) -> novin_intelligence.ThreatLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ThreatLevel",
+                    "printedName": "novin_intelligence.ThreatLevel",
+                    "usr": "s:18novin_intelligence11ThreatLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "novin_intelligence.ThreatLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ThreatLevel",
+                        "printedName": "novin_intelligence.ThreatLevel",
+                        "usr": "s:18novin_intelligence11ThreatLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18novin_intelligence11ThreatLevelO8elevatedyA2CmF",
+            "mangledName": "$s18novin_intelligence11ThreatLevelO8elevatedyA2CmF",
+            "moduleName": "novin_intelligence"
+          },
+          {
+            "kind": "Var",
+            "name": "critical",
+            "printedName": "critical",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(novin_intelligence.ThreatLevel.Type) -> novin_intelligence.ThreatLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ThreatLevel",
+                    "printedName": "novin_intelligence.ThreatLevel",
+                    "usr": "s:18novin_intelligence11ThreatLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "novin_intelligence.ThreatLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ThreatLevel",
+                        "printedName": "novin_intelligence.ThreatLevel",
+                        "usr": "s:18novin_intelligence11ThreatLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18novin_intelligence11ThreatLevelO8criticalyA2CmF",
+            "mangledName": "$s18novin_intelligence11ThreatLevelO8criticalyA2CmF",
+            "moduleName": "novin_intelligence"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "novin_intelligence.ThreatLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ThreatLevel",
+                    "printedName": "novin_intelligence.ThreatLevel",
+                    "usr": "s:18novin_intelligence11ThreatLevelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18novin_intelligence11ThreatLevelO8rawValueACSgSS_tcfc",
+            "mangledName": "$s18novin_intelligence11ThreatLevelO8rawValueACSgSS_tcfc",
+            "moduleName": "novin_intelligence",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence11ThreatLevelO8rawValueSSvp",
+            "mangledName": "$s18novin_intelligence11ThreatLevelO8rawValueSSvp",
+            "moduleName": "novin_intelligence",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence11ThreatLevelO8rawValueSSvg",
+                "mangledName": "$s18novin_intelligence11ThreatLevelO8rawValueSSvg",
+                "moduleName": "novin_intelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18novin_intelligence11ThreatLevelO",
+        "mangledName": "$s18novin_intelligence11ThreatLevelO",
+        "moduleName": "novin_intelligence",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecurityAssessment",
+        "printedName": "SecurityAssessment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "threatLevel",
+            "printedName": "threatLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ThreatLevel",
+                "printedName": "novin_intelligence.ThreatLevel",
+                "usr": "s:18novin_intelligence11ThreatLevelO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence18SecurityAssessmentV11threatLevelAA06ThreatF0Ovp",
+            "mangledName": "$s18novin_intelligence18SecurityAssessmentV11threatLevelAA06ThreatF0Ovp",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ThreatLevel",
+                    "printedName": "novin_intelligence.ThreatLevel",
+                    "usr": "s:18novin_intelligence11ThreatLevelO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV11threatLevelAA06ThreatF0Ovg",
+                "mangledName": "$s18novin_intelligence18SecurityAssessmentV11threatLevelAA06ThreatF0Ovg",
+                "moduleName": "novin_intelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confidence",
+            "printedName": "confidence",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence18SecurityAssessmentV10confidenceSdvp",
+            "mangledName": "$s18novin_intelligence18SecurityAssessmentV10confidenceSdvp",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV10confidenceSdvg",
+                "mangledName": "$s18novin_intelligence18SecurityAssessmentV10confidenceSdvg",
+                "moduleName": "novin_intelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "processingTimeMs",
+            "printedName": "processingTimeMs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence18SecurityAssessmentV16processingTimeMsSdvp",
+            "mangledName": "$s18novin_intelligence18SecurityAssessmentV16processingTimeMsSdvp",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV16processingTimeMsSdvg",
+                "mangledName": "$s18novin_intelligence18SecurityAssessmentV16processingTimeMsSdvg",
+                "moduleName": "novin_intelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "reasoning",
+            "printedName": "reasoning",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence18SecurityAssessmentV9reasoningSSvp",
+            "mangledName": "$s18novin_intelligence18SecurityAssessmentV9reasoningSSvp",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV9reasoningSSvg",
+                "mangledName": "$s18novin_intelligence18SecurityAssessmentV9reasoningSSvg",
+                "moduleName": "novin_intelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "requestId",
+            "printedName": "requestId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence18SecurityAssessmentV9requestIdSSSgvp",
+            "mangledName": "$s18novin_intelligence18SecurityAssessmentV9requestIdSSSgvp",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV9requestIdSSSgvg",
+                "mangledName": "$s18novin_intelligence18SecurityAssessmentV9requestIdSSSgvg",
+                "moduleName": "novin_intelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18novin_intelligence18SecurityAssessmentV9timestampSSSgvp",
+            "mangledName": "$s18novin_intelligence18SecurityAssessmentV9timestampSSSgvp",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV9timestampSSSgvg",
+                "mangledName": "$s18novin_intelligence18SecurityAssessmentV9timestampSSSgvg",
+                "moduleName": "novin_intelligence",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(threatLevel:confidence:processingTimeMs:reasoning:requestId:timestamp:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityAssessment",
+                "printedName": "novin_intelligence.SecurityAssessment",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ThreatLevel",
+                "printedName": "novin_intelligence.ThreatLevel",
+                "usr": "s:18novin_intelligence11ThreatLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18novin_intelligence18SecurityAssessmentV11threatLevel10confidence16processingTimeMs9reasoning9requestId9timestampAcA06ThreatF0O_S2dS2SSgALtcfc",
+            "mangledName": "$s18novin_intelligence18SecurityAssessmentV11threatLevel10confidence16processingTimeMs9reasoning9requestId9timestampAcA06ThreatF0O_S2dS2SSgALtcfc",
+            "moduleName": "novin_intelligence",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SecurityAssessment",
+                "printedName": "novin_intelligence.SecurityAssessment",
+                "usr": "s:18novin_intelligence18SecurityAssessmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18novin_intelligence18SecurityAssessmentV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s18novin_intelligence18SecurityAssessmentV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "novin_intelligence",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18novin_intelligence18SecurityAssessmentV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s18novin_intelligence18SecurityAssessmentV6encode2toys7Encoder_p_tKF",
+            "moduleName": "novin_intelligence",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:18novin_intelligence18SecurityAssessmentV",
+        "mangledName": "$s18novin_intelligence18SecurityAssessmentV",
+        "moduleName": "novin_intelligence",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ollie\/CascadeProjects\/Novin-Intelligence\/Sources\/NovinIntelligence\/NovinIntelligence.swift",
+      "kind": "BooleanLiteral",
+      "offset": 279,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ollie\/CascadeProjects\/Novin-Intelligence\/Sources\/NovinIntelligence\/NovinIntelligence.swift",
+      "kind": "StringLiteral",
+      "offset": 391,
+      "length": 34,
+      "value": "\"com.novinintelligence.processing\""
+    },
+    {
+      "filePath": "\/Users\/ollie\/CascadeProjects\/Novin-Intelligence\/Sources\/NovinIntelligence\/NovinIntelligence.swift",
+      "kind": "StringLiteral",
+      "offset": 4553,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/ollie\/CascadeProjects\/Novin-Intelligence\/Sources\/NovinIntelligence\/NovinIntelligence.swift",
+      "kind": "StringLiteral",
+      "offset": 5137,
+      "length": 11,
+      "value": "\"frontDoor\""
+    },
+    {
+      "filePath": "\/Users\/ollie\/CascadeProjects\/Novin-Intelligence\/Sources\/NovinIntelligence\/PythonBridge.swift",
+      "kind": "BooleanLiteral",
+      "offset": 201,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/ollie\/CascadeProjects\/Novin-Intelligence\/Sources\/NovinIntelligence\/PythonBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 258,
+      "length": 30,
+      "value": "\"com.novinintelligence.bridge\""
+    },
+    {
+      "filePath": "\/Users\/ollie\/CascadeProjects\/Novin-Intelligence\/Sources\/NovinIntelligence\/PythonBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 1729,
+      "length": 12,
+      "value": "\"ios_client\""
+    }
+  ]
+}
